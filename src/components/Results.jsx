@@ -30,7 +30,7 @@ const Results = () => {
                     {results?.map(({ link, title }, index) => (
                         <div key={index} className="md:w-2/5 w-full first:mt-6 ">
                             <a href={link} target="_blank" rel="noreferrer">
-                                <p className="text-sm">
+                                <p className="text-sm text-green-900 dark:text-green-600">
                                     {link.length > 40 ? link.substring(0, 40) + '...' : link}
                                 </p>
                                 <p className="text-lg hover:underline dark:text-blue-300 text-blue-700">
@@ -74,7 +74,7 @@ const Results = () => {
                                     {title}
                                 </p>
                             </a>
-                            <a href={source?.href} target="_blank" rel="noreferrer" className="hover:underline">
+                            <a href={source?.href} target="_blank" rel="noreferrer" className="text-green-900 dark:text-green-600 hover:underline">
                                 {source?.href}
                             </a>
 
