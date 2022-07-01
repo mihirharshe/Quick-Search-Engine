@@ -41,7 +41,7 @@ const Results = () => {
                     ))}
                 </div>
             );
-        case '/images':
+        case '/image':
             return (
                 <div className="flex flex-wrap justify-center items-center">
                     {results?.map(({ image, link: { href, title } }, index) => (
